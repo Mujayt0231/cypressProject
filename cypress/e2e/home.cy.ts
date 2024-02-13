@@ -7,7 +7,7 @@ describe("home page", () => {
   })
 
   it("the h1 contains the correct text", () => {
-    cy.get('.text-gray-900').should("exist").contains("Testing Your First Next.js Application")
+    cy.getByData("hero-heading").should("exist").contains("Testing Your First Next.js Application")
   })
 
   it.only("the data table on the homepage are correct", () => {
